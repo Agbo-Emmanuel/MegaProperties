@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,12 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-1">
-            <Link
-              to="/"
-              className="text-2xl font-bold flex items-center space-x-2 mb-6"
-            >
-              <span className="text-white italic">Mega</span>
-              <span className="text-secondary">Properties</span>
+            <Link to="/" className="flex items-center mb-6">
+              <img
+                src={logo}
+                alt="Mega Properties Logo"
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Leading the way in comfortable living. We specialize in renting

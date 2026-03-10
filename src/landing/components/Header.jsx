@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +11,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link
-              to="/"
-              className="text-2xl font-bold flex items-center space-x-2"
-            >
-              <span className="text-primary italic">Mega</span>
-              <span className="text-secondary">Properties</span>
+            <Link to="/" className="flex items-center">
+              <img
+                src={logo}
+                alt="Mega Properties Logo"
+                className="h-12 w-auto md:h-16 transition-transform hover:scale-105"
+              />
             </Link>
           </div>
 
